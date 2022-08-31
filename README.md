@@ -59,7 +59,7 @@ POSTGRES_USER=<логин для подключения к базе данных
 POSTGRES_PASSWORD=<пароль для подключения к БД>
 DB_HOST=<название сервиса (контейнера)>
 DB_PORT=<порт для подключения к БД>
-```
+```ъ
 
 Запустить контейнеры:
 
@@ -89,6 +89,12 @@ docker-compose exec web python manage.py collectstatic --no-input
 
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
+```
+
+Ппосле этого проект будет доступен по адресу:
+
+```
+http://localhost/redoc/
 ```
 
 ## Разработчики
